@@ -18,6 +18,10 @@ body
   letter-spacing: -0.035em
   color: hsl(0, 0, 31%)
 
+a
+  color: $dark-color
+  text-decoration: none
+
 .main-container
   max-width: 1440px
   margin: 0 auto
@@ -60,11 +64,15 @@ body
     font-size: 14px
     line-height: 21px
     font-weight: 700
-    text-decoration: none
     transition: all 1s
 
     &:hover
       background-color: darken($dark-color, 10%)
+      transition: all 1s
+
+    &:active,
+    &:focus,
+      background-color: darken($dark-color, 20%)
       transition: all 1s
 
 .alert-text
