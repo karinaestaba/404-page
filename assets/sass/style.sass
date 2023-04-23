@@ -22,7 +22,7 @@ body
   display: flex
   flex-direction: column
   justify-content: space-between
-  height: 100%
+  min-height: 100%
   min-height: 100vh
   gap: 2rem
 
@@ -42,7 +42,7 @@ a
   position: relative
 
 .hero
-  margin-top: 134px
+  margin-top: 119px
   padding-bottom: 2em
 
   &-img
@@ -79,7 +79,7 @@ a
       transition: all 1s
 
     &:active,
-    &:focus,
+    &:focus
       background-color: darken($dark-color, 20%)
       transition: all 1s
 
@@ -111,6 +111,7 @@ footer
       &:active,
       &:focus
         color: darken($medium-color, 10%)
+        opacity: .7
 
 @media screen and (min-width: 998px)
   body
@@ -122,11 +123,12 @@ footer
   .main-container
     padding: 0 2em
     height: 100%
-    min-height: 100vh
+    min-height: 90vh
 
   .hero
-    margin-top: 30px
+    margin-top: 0
     padding-top: 4em
+    padding-bottom: 0
 
     display: grid
     grid-template-columns: 2fr 2fr
